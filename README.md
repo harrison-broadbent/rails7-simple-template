@@ -1,4 +1,4 @@
-# README
+# Rails 7 Simple Template
 
 Simple Rails template with the following things already set up — 
 

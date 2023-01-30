@@ -1,0 +1,8 @@
+<div>
+  <h1 class="font-bold text-4xl">Home#index</h1>
+  <% if current_user %>
+    <h3><%= current_user.name %></h3>
+    <h3><%= current_user.email %></h3>
+    <%= image_tag(current_user.image) unless current_user.image.nil? %>
+  <% end %>
+</div>

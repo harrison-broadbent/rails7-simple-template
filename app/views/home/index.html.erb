@@ -4,5 +4,8 @@
     <h3><%= current_user.name %></h3>
     <h3><%= current_user.email %></h3>
     <%= image_tag(current_user.image) unless current_user.image.nil? %>
-  <% end %>
+    <%= button_to "Sign out", destroy_user_session_path, :method => :delete %>
+  <% else %>
+    <%=  button_to "Sign in with Google.", omniauth_authorize_path(:user, :google_oauth2), method: :post, data: { turbo: false }, class: "text-grey-700 font-semibold" %>
+<% end %>
 </div>

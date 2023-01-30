@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple Rails template with the following things already set up — 
 
-Things you may want to cover:
+- Rails 7 and Ruby 3.2.0
+- A simple Home controller with a basic Home#index view
+- Devise + a basic user model
+- Google Omniauth + CSRF Protection
+- TailwindCSS
+- Annotate gem for model annotations
+- foremen for `./bin/dev` live reloading
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Clone this repo and you're almost good to go. 
+You just need to delete `master.key` and `credentials.yml.enc` and regenerate them
